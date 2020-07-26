@@ -2,7 +2,7 @@ require 'selenium-webdriver'
 require 'test-unit'
 
 class ShopifyFirstTest
-    Selenium::WebDriver::Chrome::Service.driver_path = "C:\\Users\\athip\\Downloads\\chromedriver_win32\\chromedriver.exe"
+    Selenium::WebDriver::Chrome::Service.driver_path = Dir.home + "\\Downloads\\chromedriver_win32\\chromedriver.exe"
     driver = Selenium::WebDriver.for :chrome
     driver.navigate.to "https://www.shopify.com/"
     driver.manage.timeouts.implicit_wait = 10

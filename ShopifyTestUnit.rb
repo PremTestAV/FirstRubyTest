@@ -16,6 +16,6 @@ class ShopifyTestUnit < Test::Unit::TestCase
         @get_started = @driver.find_element(:xpath, "//*[@id='body-content']/div[1]/div[2]/div/p/a")
         @get_started.click
         sleep(7)
-        assert_equal("Sign up Shopify - Free 14-day trial", @driver.title)
+        assert_equal("Sign up for Shopify - Free 14-day trial", @driver.title)
     end
 end
